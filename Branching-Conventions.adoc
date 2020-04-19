@@ -14,13 +14,11 @@ These branches should be short lived as they should only be for small items.
 
 The naming for user branches will be along the lines of `user/<username>/<JIRA-Issue Number>-Quick-Summary`.
 
-The JIRA-Issue Number is composed of the 3 letter project code for Development-Resources this is `DEV` followed by the issue number. 
+The JIRA-Issue Number is composed of the 3 letter project code, for Development-Resources this is `DEV`, followed by the issue number. 
 
 For example, `user/avneetgill/DEV-2-Add-Guides`
 
 These branches should (normally) be merged using the *rebase and merge* option, to keep the commit history linear.
-
-image:images/rebase-and-merge.png[]
 
 ### Feature Branches
 
@@ -32,4 +30,3 @@ For example, `feature/signup-page`
 
 These branches should (normally) be merged using the *Create a Merge Commit* option, as it is usually beneficial to keep the history together.
 
-image:images/merge-commits.png[]
