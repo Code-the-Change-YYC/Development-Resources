@@ -9,8 +9,8 @@ As a result, *no one should ever force push to the master branch!*
 
 ### User Branches
 
-User branches are the most common kind of branch, that an individual user opens to work on a task. 
-These branches should be short lived as they should only be for small items.
+User branches are the most common kind of branch. These are brances that an individual opens to work on a task or bug fix. 
+These are typically short lived as they are only used for small items. 
 
 The naming for user branches will be along the lines of `user/<username>/<JIRA-Issue Number>-Quick-Summary`.
 
@@ -18,7 +18,7 @@ The JIRA-Issue Number is composed of the 3 letter project code, for Development-
 
 For example, `user/avneetgill/DEV-2-Add-Guides`
 
-These branches should (normally) be merged using the *rebase and merge* option, to keep the commit history linear.
+These branches should (normally) be merged using the *rebase and merge* option. This keeps the commit history linear.
 
 ### Feature Branches
 
