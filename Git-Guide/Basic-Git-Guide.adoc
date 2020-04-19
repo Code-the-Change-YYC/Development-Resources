@@ -1,0 +1,52 @@
+=  Intro to Git
+
+== Common Commands
+
+This is just a quick overview of the commands that would be used most frequently:
+
+*  `git add <file>` adds files to the staging area so they can be committed.
+
+*  `git commit -m 'commit messages'` makes a commit local to your computer with everything that's been "added" i.e. in the staging area.
+Try to write commit messages that are descriptive and explain what the commit does, and why it was done. 
+
+*  `git push` sends your committed changes upstream, in our case to GitHub.
+
+*  `git push --set-upstream origin <newBranchName>` pushes a new branch from your computer to the 'origin' (Github) for the FIRST time.
+All subsequent pushes can just use the `git push` command as listed above.*
+
+*  `git status` displays the files that have been changed.
+Green files means that they have been "added" and are in the staging area.
+Red means that they have not been "added".
+
+*  `git pull` pulls down any changes that were done by other people.
+
+*  `git fetch` checks if any changes were done by other people, without pulling them down. 
+
+*  `git checkout <branchName>` changes branches, add the `-b` flag to move to a new branch.
+
+*  `git branch -M <new-branch-name>` - renames a branch.
+
+== Usual Workflow for Making Changes
+
+The usual workflow for pushing changes with Git is as follows.
+
+. Make your changes and save them.
+. Use `git add <file>` and add all the files whose changes you want committed.
+. Use `git status` to double check what files you've added are in the staging area.
+Anything green will be committed.
+. Then use `git commit -m 'Your descriptive message'` to commit all the staged changes (green files).
+Make sure to write a descriptive commit message!
+. Finally use `git push` to push your changes up to Github.
+
+* If you are working on a branch that multiple individuals are working on you may need to `git pull` before you `git push` to ensure you have their changes, and that there are no conflicts. 
+
+After pushing, your changes should be updated on the Server (Github).
+
+== Further Resources
+
+Helpful Links/Guides:
+
+*  http://rogerdudler.github.io/git-guide/
+*  https://git-scm.com/book/en/v2/Getting-Started-Git-Basics
+*  https://guides.github.com/
+*  https://ohshitgit.com 
